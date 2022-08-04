@@ -1,0 +1,114 @@
+body{
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+}
+.row::after {
+       content: "";
+       clear: both;
+       display: table;
+}
+.eastern {
+	border: 2px solid black;
+	width: 100% ;
+	height: 194px ;
+        margin: 0;
+        background-image: url(jj.jpg);
+}
+.eastern img {
+        width: 100%;    
+}
+.navbar {
+    overflow: hidden;
+    background-color: orange;
+    font-family: script mt;
+    float: center;
+    width: 100%;
+}
+.style a {
+    float: right;
+    border: 1px solid black;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar .active {
+    background-color: green;
+    opacity: 0.8;
+    color: white;
+}
+.navbar a:hover {
+    background-color: blue;
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+.dropdown:hover {
+    background-color: blue;
+}
+.dropdown .dropbtn {
+    font-size: 30px;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    font-size: 22px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: blue;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.east {
+    height: 170px;
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.description {
+  background-color: orange;
+  opacity: 0.65;
+  text-align: justify;
+  text-indent: 50px;
+  font-size: 20px;
+  font-family: verdana;
+  margin: auto;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px; 
+}
+.zoom {
+    padding: 50px;
+    float: left;
+    transition: transform .2s;
+    width: 450px;
+    height: 300px;
+    margin-left: 50px;
+}
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

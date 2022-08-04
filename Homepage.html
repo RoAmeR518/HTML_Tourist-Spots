@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<link rel="stylesheet" href="homepage.css">
+</head>
+<div class="eastern">
+<img src="kk.png" alt="eastern visayas" class="east">
+</div>
+<div class="navbar">
+ <div class="style">
+  <a href="Tourists Spots.html">Tourist Spots</a>
+  <a href="Images.html">Images</a>
+  <div class="dropdown">
+    <button class="dropbtn">Provinces</button>
+    <div class="dropdown-content">
+      <a href="Samar.html">Samar</a>
+      <a href="Northern Samar.html">Northern Samar</a>
+      <a href="Eastern Samar.html">Eastern Samar</a>
+      <a href="biliran.html">Biliran</a>
+      <a href="Leyte.html">Leyte</a>
+      <a href="Southern Leyte.html">So. Leyte</a>
+    </div>
+  </div>
+  <a class="active" href="#home">Home</a></div>
+ </div>
+</div>
+<body background="pexels-photo-370799.jpg">
+<br><br><br><br>
+<div class="slideshow-container">
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 6</div>
+     <a href="Capul, Northern Samar.jpg"><img src="Capul, Northern Samar.jpg" style="width:100%"></a>
+     <div class="overlay">Capul, Northern Samar</div>
+</div>
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 6</div>
+     <a href="Talalora, Samar.jpg"><img src="Talalora, Samar.jpg" style="width:100%"></a>
+     <div class="overlay">Talalora, Samar</div>
+</div>
+   <div class="mySlides fade">
+     <div class="numbertext">3 / 6</div>
+     <a href="Guiuan, Eastern Samar.jpg"><img src="Guiuan, Eastern Samar.jpg" style="width:100%"></a>
+     <div class="overlay">Guiuan, Eastern Samar</div>
+</div>
+   <div class="mySlides fade">
+     <div class="numbertext">4 / 6</div>
+     <a href="Biliran Bridge, Biliran.jpg"><img src="Biliran Bridge, Biliran.jpg" style="width:100%"></a>
+     <div class="overlay">Biliran Bridge, Biliran</div>
+</div>
+   <div class="mySlides fade">
+     <div class="numbertext">5 / 6</div>
+     <a href="Palompon, Leyte.jpg"><img src="Palompon, Leyte.jpg" style="width:100%"></a>
+     <div class="overlay">Palompon, Leyte</div>
+</div>
+   <div class="mySlides fade">
+     <div class="numbertext">6 / 6</div>
+     <a href="Limasawa, So. Leyte.jpg"><img src="Limasawa, So. Leyte.jpg" style="width:100%"></a>
+     <div class="overlay">Limasawa, So. Leyte (bird's-eye view)</div>
+</div>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<br><br>
+<div class="description">
+<center><h1><b><u>A Brief Introduction</u></b></h1></center>
+<p>      Eastern Visayas is one of the three regions in the Visayas group of islands and it is designated as Region VIII
+out of the 17 regions of the entire Philippines. The region is a grouping of three major islands of Samar, Leyte and
+Biliran and other small islands scattered throughout the eastern archipelago of the Visayas. It is composed of the six
+provinces of Leyte, Southern Leyte, Samar, Eastern Samar, Northern Samar and Biliran.</p>
+<p>      The region is a destination for marine adventurers like scuba diving, snorkeling and surfing. At the southern end
+of a massive underwater coral gardens ideal for scuba diving and snorkeling. In the Pacific coast of Eastern Samar, the
+island of Calicoan is home to an international surfing circuit held every year. The smaller island of Biliran is popular
+to beachcombers with it pristine white sand beaches.</p>
+<p>      For geological wonders, along its shores at the northern part of Samar island are towering rock formations in Biri
+and Capul, Northern Samar, and in the Leyte Gulf sie of Marabut, Eastern Samar. There are volcanic lakes located in the
+various islands of the region, most notable of whic is Lake Danao in Ormoc City.</p>
+<p>      For road trip adventure, the three major islands of the region is encircled by a coastal highway end to end.
+Countryside driving can be a relaxing experience with views of the ocean and seas atop the mountains of Samar. San Juanico
+Bridge, the first longest bridge in Asia is found in the region. It connects Leyte and Samar Islands between Tacloban City
+and Sta. Rita, Samar. The bridge became an engineering marvel after its construction in the 70's. Biliran Bridge connects Leyte
+and Biliran Islands.</p>
+</div>
+
+
+
+
+
+   
+ 
+                                                                                                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+} 
+</script>
+</body>
+</html>
